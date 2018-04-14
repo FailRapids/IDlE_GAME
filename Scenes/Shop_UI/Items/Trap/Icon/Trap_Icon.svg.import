@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Trap_Icon.svg-d3ef23ab4d4dfbf2c5b65c5b39291cda.stex"
+path="res://.import/Trap_Icon.svg-04fe830ac410a539a36b8229ee6d8864.stex"
 
 [deps]
 
-source_file="res://Res/Shop/Building/Items/Trap/Icon/Trap_Icon.svg"
-dest_files=[ "res://.import/Trap_Icon.svg-d3ef23ab4d4dfbf2c5b65c5b39291cda.stex" ]
+source_file="res://Scenes/Shop_UI/Items/Trap/Icon/Trap_Icon.svg"
+dest_files=[ "res://.import/Trap_Icon.svg-04fe830ac410a539a36b8229ee6d8864.stex" ]
 
 [params]
 
