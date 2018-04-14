@@ -3,6 +3,7 @@ export(NodePath) var _queue = NodePath("1/1/Queue")
 export(NodePath) var _Progress_Bar = NodePath("1/1/2/Progress_Bar")
 
 var qb = load("res://UTIL/queue.gd")
+var tm = load("res://UTIL/timer.gd")
 
 var queue = qb.queue.new()
 
@@ -56,7 +57,7 @@ func buttontoggle(button_pressed):
 			self.timer.kill()
 			get_node("1/2/Button").set_pressed(false)
 	else:
-		if currentbuilding and not(self.timer == null):
+		if currentbuilding and self.timer != null:
 			self.timer.Pause()
 		elif currentbuilding == null:
 			self.timer.Stop()
@@ -74,4 +75,26 @@ func _on_Timer_timeout():
 func on_Request(Item):
 	queue.push(Item)
 	
-			
+class timer:
+	func _init(timer,progressBar):
+		pass
+	func update_Bar(delta):
+		pass
+	func _connect(who):
+		pass
+	
+	func _disconect(who):
+		pass
+		
+	func Stop():
+		pass 
+	func Pause():
+		pass
+	func unPause():
+		pass
+	func Start(step,time):
+		pass
+	
+		
+	func kill():
+		pass 
