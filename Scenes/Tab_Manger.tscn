@@ -1,0 +1,154 @@
+[gd_scene load_steps=19 format=2]
+
+[ext_resource path="res://Scenes/Shop_UI/Tab_Manger/Tab_Manger.gd" type="Script" id=1]
+[ext_resource path="res://Scenes/Shop_UI/Items/Barn/Barn.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/Shop_UI/Items/Forge/Forge.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/Shop_UI/Items/Hotel/Hotel.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scenes/Shop_UI/Items/House/House.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Scenes/Shop_UI/Items/Hut/Hut.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Scenes/Shop_UI/Items/Shed/Shed.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Scenes/Shop_UI/Items/Mansion/Manison.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Scenes/Shop_UI/Items/Collector/Collector.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Scenes/Shop_UI/Items/Dimensional_Generator/Dimensional_Generator.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Scenes/Shop_UI/Items/Gateway/Gateway.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Scenes/Shop_UI/Items/Gym/Gym.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Scenes/Shop_UI/Items/Nursery/Nursery.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Scenes/Shop_UI/Items/Resort/Resort.tscn" type="PackedScene" id=14]
+[ext_resource path="res://Scenes/Shop_UI/Items/Tribute/Tribute.tscn" type="PackedScene" id=15]
+[ext_resource path="res://Scenes/Shop_UI/Items/Warpstation/Warpstation.tscn" type="PackedScene" id=16]
+[ext_resource path="res://Scenes/Shop_UI/Items/Wormhole/Wormhole.tscn" type="PackedScene" id=17]
+[ext_resource path="res://Scenes/Shop_UI/Items/Trap/Trap.tscn" type="PackedScene" id=18]
+
+[node name="Tab_Manger" type="TabContainer"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 881.0
+margin_bottom = 455.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+tab_align = 1
+tabs_visible = true
+script = ExtResource( 1 )
+_sections_unfolded = [ "Size Flags" ]
+
+[node name="Barn" parent="." index="0" instance=ExtResource( 2 )]
+
+margin_left = 4.0
+margin_top = 32.0
+margin_right = -4.0
+margin_bottom = -4.0
+
+[node name="Forge" parent="." index="1" instance=ExtResource( 3 )]
+
+visible = false
+margin_left = 4.0
+margin_top = 32.0
+margin_right = -4.0
+margin_bottom = -4.0
+
+[node name="Hotel" parent="." index="2" instance=ExtResource( 4 )]
+
+visible = false
+margin_left = 4.0
+margin_top = 32.0
+margin_right = -4.0
+margin_bottom = -4.0
+
+[node name="House" parent="." index="3" instance=ExtResource( 5 )]
+
+visible = false
+margin_left = 4.0
+margin_top = 32.0
+margin_right = -4.0
+margin_bottom = -4.0
+
+[node name="Hut" parent="." index="4" instance=ExtResource( 6 )]
+
+visible = false
+margin_top = 32.0
+
+[node name="Shed" parent="." index="5" instance=ExtResource( 7 )]
+
+visible = false
+margin_left = 4.0
+margin_top = 32.0
+margin_right = -4.0
+margin_bottom = -4.0
+
+[node name="Manison" parent="." index="6" instance=ExtResource( 8 )]
+
+visible = false
+margin_left = 4.0
+margin_top = 32.0
+margin_right = -4.0
+margin_bottom = -4.0
+
+[node name="Collector" parent="." index="7" instance=ExtResource( 9 )]
+
+visible = false
+margin_left = 4.0
+margin_top = 32.0
+margin_right = -4.0
+margin_bottom = -4.0
+
+[node name="Dimensional_Generator" parent="." index="8" instance=ExtResource( 10 )]
+
+visible = false
+margin_top = 32.0
+
+[node name="Gateway" parent="." index="9" instance=ExtResource( 11 )]
+
+visible = false
+margin_left = 4.0
+margin_top = 32.0
+margin_right = -4.0
+margin_bottom = -4.0
+
+[node name="Gym" parent="." index="10" instance=ExtResource( 12 )]
+
+visible = false
+margin_left = 4.0
+margin_top = 32.0
+margin_right = -4.0
+margin_bottom = -4.0
+
+[node name="Nursery" parent="." index="11" instance=ExtResource( 13 )]
+
+margin_top = 32.0
+
+[node name="Resort" parent="." index="12" instance=ExtResource( 14 )]
+
+margin_top = 32.0
+
+[node name="Tribute" parent="." index="13" instance=ExtResource( 15 )]
+
+visible = false
+margin_left = 4.0
+margin_top = 32.0
+margin_right = -4.0
+margin_bottom = -4.0
+
+[node name="Warpstation" parent="." index="14" instance=ExtResource( 16 )]
+
+margin_top = 32.0
+
+[node name="Wormhole" parent="." index="15" instance=ExtResource( 17 )]
+
+margin_top = 32.0
+
+[node name="Trap" parent="." index="16" instance=ExtResource( 18 )]
+
+visible = false
+margin_left = 4.0
+margin_top = 32.0
+margin_right = -4.0
+margin_bottom = -4.0
+
+

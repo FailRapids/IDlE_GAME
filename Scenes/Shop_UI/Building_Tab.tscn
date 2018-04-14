@@ -1,0 +1,147 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Scripts/Shop_UI/Building_TAB.gd" type="Script" id=1]
+[ext_resource path="res://Scenes/Tab_Manger.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/Button_Manger.tscn" type="PackedScene" id=3]
+
+[node name="Building" type="Tabs"]
+
+anchor_right = 1
+anchor_bottom = 1
+margin_left = 4.0
+margin_top = 32.0
+margin_right = -4.0
+margin_bottom = -4.0
+rect_clip_content = false
+mouse_filter = 0
+script = ExtResource( 1 )
+
+[node name="1" type="VBoxContainer" parent="."]
+
+anchor_right = 1
+anchor_bottom = 1
+rect_clip_content = false
+mouse_filter = 1
+size_flags_horizontal = 3
+size_flags_vertical = 3
+alignment = 0
+_sections_unfolded = [ "Size Flags", "Theme" ]
+
+[node name="Tab_Manger" parent="1" instance=ExtResource( 2 )]
+
+margin_right = 1024.0
+margin_bottom = 284.0
+tabs_visible = false
+
+[node name="Barn" parent="1/Tab_Manger"]
+
+margin_top = 0.0
+margin_right = 4.0
+margin_bottom = 4.0
+
+[node name="Forge" parent="1/Tab_Manger"]
+
+margin_top = 0.0
+margin_right = 4.0
+margin_bottom = 4.0
+
+[node name="Hotel" parent="1/Tab_Manger"]
+
+margin_top = 0.0
+margin_right = 4.0
+margin_bottom = 4.0
+
+[node name="House" parent="1/Tab_Manger"]
+
+margin_top = 0.0
+margin_right = 4.0
+margin_bottom = 4.0
+
+[node name="Hut" parent="1/Tab_Manger"]
+
+margin_top = 0.0
+margin_right = 4.0
+margin_bottom = 4.0
+
+[node name="Shed" parent="1/Tab_Manger"]
+
+margin_top = 0.0
+margin_right = 4.0
+margin_bottom = 4.0
+
+[node name="Manison" parent="1/Tab_Manger"]
+
+margin_top = 0.0
+margin_right = 4.0
+margin_bottom = 4.0
+
+[node name="Collector" parent="1/Tab_Manger"]
+
+margin_top = 0.0
+margin_right = 4.0
+margin_bottom = 4.0
+
+[node name="Dimensional_Generator" parent="1/Tab_Manger"]
+
+margin_top = 0.0
+margin_right = 4.0
+margin_bottom = 4.0
+
+[node name="Gateway" parent="1/Tab_Manger"]
+
+margin_top = 0.0
+margin_right = 4.0
+margin_bottom = 4.0
+
+[node name="Gym" parent="1/Tab_Manger"]
+
+margin_top = 0.0
+margin_right = 4.0
+margin_bottom = 4.0
+
+[node name="Nursery" parent="1/Tab_Manger"]
+
+margin_top = 0.0
+margin_right = 4.0
+margin_bottom = 4.0
+
+[node name="Resort" parent="1/Tab_Manger"]
+
+margin_top = 0.0
+margin_right = 4.0
+margin_bottom = 4.0
+
+[node name="Tribute" parent="1/Tab_Manger"]
+
+margin_top = 0.0
+margin_right = 4.0
+margin_bottom = 4.0
+
+[node name="Warpstation" parent="1/Tab_Manger"]
+
+margin_top = 0.0
+margin_right = 4.0
+margin_bottom = 4.0
+
+[node name="Wormhole" parent="1/Tab_Manger"]
+
+margin_top = 0.0
+margin_right = 4.0
+margin_bottom = 4.0
+
+[node name="Trap" parent="1/Tab_Manger"]
+
+margin_top = 0.0
+margin_right = 4.0
+margin_bottom = 4.0
+
+[node name="Button_Manger" parent="1" instance=ExtResource( 3 )]
+
+margin_top = 288.0
+margin_right = 1024.0
+margin_bottom = 572.0
+
+[connection signal="_pressed" from="1/Button_Manger" to="1/Tab_Manger" method="_on_pressed"]
+
+
+[editable path="1/Tab_Manger"]

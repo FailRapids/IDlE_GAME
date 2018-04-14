@@ -1,0 +1,163 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://icon.png" type="Texture" id=1]
+
+[node name="Base_Props" type="PanelContainer"]
+
+editor/display_folded = true
+anchor_right = 1
+anchor_bottom = 1
+rect_clip_content = false
+mouse_filter = 0
+
+[node name="1" type="HBoxContainer" parent="."]
+
+editor/display_folded = true
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 1017.0
+margin_bottom = 593.0
+rect_clip_content = false
+mouse_filter = 1
+alignment = 0
+
+[node name="Picture" type="TextureRect" parent="1"]
+
+margin_right = 402.0
+margin_bottom = 586.0
+rect_clip_content = false
+mouse_filter = 1
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource( 1 )
+stretch_mode = 6
+_sections_unfolded = [ "Size Flags" ]
+
+[node name="1" type="VBoxContainer" parent="1"]
+
+margin_left = 406.0
+margin_right = 1010.0
+margin_bottom = 586.0
+rect_clip_content = false
+mouse_filter = 1
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 1.5
+alignment = 0
+_sections_unfolded = [ "Size Flags" ]
+
+[node name="1" type="HBoxContainer" parent="1/1"]
+
+editor/display_folded = true
+margin_right = 604.0
+margin_bottom = 14.0
+rect_clip_content = false
+mouse_filter = 1
+alignment = 0
+
+[node name="Name" type="Label" parent="1/1/1"]
+
+margin_right = 604.0
+margin_bottom = 14.0
+rect_clip_content = false
+mouse_filter = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+text = "Baisc Trimp"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Size Flags" ]
+
+[node name="Amnt" type="Label" parent="1/1/1"]
+
+visible = false
+margin_left = 140.0
+margin_right = 276.0
+margin_bottom = 14.0
+rect_clip_content = false
+mouse_filter = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+text = "x0"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Size Flags" ]
+
+[node name="Cost" type="Label" parent="1/1/1"]
+
+visible = false
+margin_left = 211.0
+margin_right = 418.0
+margin_bottom = 14.0
+rect_clip_content = false
+mouse_filter = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+text = "W:20"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Size Flags" ]
+
+[node name="Info" type="RichTextLabel" parent="1/1"]
+
+margin_top = 18.0
+margin_right = 604.0
+margin_bottom = 586.0
+mouse_filter = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+bbcode_enabled = false
+bbcode_text = ""
+visible_characters = -1
+_sections_unfolded = [ "Size Flags" ]
+
+[node name="2" type="HBoxContainer" parent="1/1"]
+
+editor/display_folded = true
+visible = false
+margin_top = 88.0
+margin_right = 418.0
+margin_bottom = 108.0
+rect_clip_content = false
+mouse_filter = 1
+alignment = 0
+
+[node name="Buy" type="Button" parent="1/1/2"]
+
+margin_right = 207.0
+margin_bottom = 20.0
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 3
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "Buy"
+flat = false
+_sections_unfolded = [ "Size Flags" ]
+
+[node name="Sell" type="Button" parent="1/1/2"]
+
+margin_left = 211.0
+margin_right = 418.0
+margin_bottom = 20.0
+rect_clip_content = false
+mouse_filter = 0
+size_flags_horizontal = 3
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "Sell"
+flat = false
+_sections_unfolded = [ "Size Flags" ]
+
+[connection signal="pressed" from="1/1/2/Buy" to="." method="_on_Buy_pressed"]
+
+[connection signal="pressed" from="1/1/2/Sell" to="." method="_on_Sell_pressed"]
+
+
