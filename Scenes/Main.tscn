@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Scenes/ex_Resource_UI.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scenes/Resource_UI.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/Queue_UI.tscn" type="PackedScene" id=3]
+
+[node name="Node" type="Node" index="0"]
+
+[node name="Rare_Resource_Nodes" parent="." index="0" instance=ExtResource( 1 )]
+margin_left = 823.035
+margin_top = 55.5792
+margin_right = 931.035
+margin_bottom = 373.579
+rect_clip_content = false
+
+[node name="Basic_Resource_Nodes" parent="." index="1" instance=ExtResource( 2 )]
+margin_left = 51.6844
+margin_top = 205.948
+margin_right = 640.684
+margin_bottom = 430.948
+Food_ = NodePath("../../Basic_Resource_Nodes/1/Food")
+Wood_ = NodePath("../../Basic_Resource_Nodes/1/Wood")
+Metal_ = NodePath("../../Basic_Resource_Nodes/1/Metal")
+Science_ = NodePath("../../Basic_Resource_Nodes/1/Science")
+
+[node name="Build_Queue" parent="." index="2" instance=ExtResource( 3 )]
+margin_left = 84.0
+margin_top = 13.0
+margin_right = 628.0
+margin_bottom = 102.0
+
